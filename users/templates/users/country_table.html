@@ -1,0 +1,54 @@
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<table>
+    <thead>
+        <tr>
+            <th>Country</th>
+            <th>Place</th>
+            <th>Population 1980</th>
+            <th>Population 2000</th>
+            <th>Population 2010</th>
+            <th>Population 2022</th>
+            <th>Population 2023</th>
+            <th>Population 2030</th>
+            <th>Population 2050</th>
+            <th>Area</th>
+            <th>Land Area (Km)</th>
+            <th>CCA2</th>
+            <th>CCA3</th>
+            <th>Net Change</th>
+            <th>Growth Rate</th>
+            <th>World Percentage</th>
+            <th>Density</th>
+            <th>Density Mi</th>
+            <th>Rank</th>
+            <!-- Add other relevant columns -->
+        </tr>
+    </thead>
+    <tbody>
+        {% for country in countries %}
+            <tr>
+                <td>{{ country.country }}</td>
+                <td>{{ country.place }}</td>
+                <td>{{ country.pop1980 }}</td>
+                <td>{{ country.pop2000 }}</td>
+                <td>{{ country.pop2010 }}</td>
+                <td>{{ country.pop2022 }}</td>
+                <td>{{ country.pop2023 }}</td>
+                <td>{{ country.pop2030 }}</td>
+                <td>{{ country.pop2050 }}</td>
+                <td>{{ country.area }}</td>
+                <td>{{ country.landAreaKm }}</td>
+                <td>{{ country.cca2 }}</td>
+                <td>{{ country.cca3 }}</td>
+                <td>{{ country.netChange }}</td>
+                <td>{{ country.growthRate }}</td>
+                <td>{{ country.worldPercentage }}</td>
+                <td>{{ country.density }}</td>
+                <td>{{ country.densityMi }}</td>
+                <td>{{ country.rank }}</td>
+                <!-- Add other relevant fields -->
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
